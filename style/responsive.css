@@ -1,0 +1,108 @@
+@media screen and (min-width: 1680px) {
+  .baner {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1480px) {
+  .main-content {
+    height: auto;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .footer {
+    font-size: 1rem;
+  }
+  .footer > a,
+  .footer > a i {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .send-btn {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .socile-icons {
+    margin-top: 3.4rem;
+    cursor: pointer;
+  }
+  .d-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work .d-grid {
+    row-gap: 0;
+  }
+  .work img {
+    width: 100%;
+  }
+  .send-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .nevigation {
+    display: block;
+    text-align: center;
+  }
+  .logo {
+    background-color: transparent;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  div.logo:hover > a {
+    color: var(--primary-color);
+    background-color: transparent;
+  }
+
+  ul.manu {
+    display: none;
+  }
+
+  .special-title {
+    width: 100%;
+    font-size: 1.7rem;
+  }
+  .special-subtitle {
+    font-size: 0.9rem;
+  }
+  .baner p {
+    font-size: 0.9rem;
+  }
+
+  .d-flex {
+    flex-direction: column;
+  }
+  .work .d-grid {
+    gap: 0;
+  }
+  .work img {
+    display: block;
+    width: 100%;
+  }
+  .info,
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .send-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .baner button a {
+    font-size: 0.8rem;
+  }
+  .d-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer p {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .footer p > a:hover {
+    background-color: transparent;
+  }
+}

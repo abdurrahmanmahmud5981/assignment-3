@@ -1,0 +1,572 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #f1f1f1;
+  --tertiary-color: gainsboro;
+  --fourth-color: #616161;
+  --fs-15: 15px;
+  --fs-18: 18px;
+  --fs-24: 24px;
+  --fs-48: 48px;
+  --fs-60: 60px;
+  --fs-64: 64px;
+  --line-hreight-27: 27px;
+  --line-hreight-32: 32.4px;
+  --shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* Basic Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: raleway, sans-serif;
+  background-color: var(--secondary-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+/* --------
+Navbar Styles 
+----------*/
+
+.nevigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  /* padding:.8rem 1rem; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  z-index: 999;
+  background-color: var(--secondary-color);
+}
+
+div.logo > a {
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12.2px;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  /* border-radius: 5px; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+div.logo:hover > a {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+.nevigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.nevigation ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 16px;
+}
+.fa-solid {
+  font-size: 13px;
+}
+.nevigation ul li:hover a {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+/* --------
+baner section Styles 
+----------*/
+
+.baner {
+  padding: 2rem 1.5rem;
+  background: url("../assets/images/mac.jpg") no-repeat center center/cover;
+  height: 594px;
+  margin-top: 50.5px;
+  color: var(--secondary-color);
+}
+.special-title {
+  margin-top: 4rem;
+  font-size: 4rem;
+  padding-top: 1rem;
+}
+.special-subtitle {
+  margin-block: 2rem 1rem;
+  font-size: 1rem;
+  color: var(--tertiary-color);
+}
+.baner button a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+.baner button {
+  padding: 0.5rem 1rem;
+  background-color: var(--secondary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-block: 1rem;
+  opacity: 0.8;
+  outline: none;
+  border: none;
+}
+.baner button:hover {
+  opacity: 1;
+}
+.socile-icons {
+  margin-top: 7rem;
+  cursor: pointer;
+}
+.socile-icons i {
+  color: var(--secondary-color);
+  opacity: 0.5;
+}
+.socile-icons i:hover {
+  opacity: 1;
+}
+/* --------
+about section Styles 
+----------*/
+.about,
+.team,
+.work {
+  padding: 2rem 1.5rem;
+  margin-block: 4rem;
+  text-align: center;
+}
+.d-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.box {
+  padding: 1rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+.title {
+  text-align: center;
+  font-size: var(--fs-24);
+  font-weight: normal;
+}
+.subtitle {
+  text-align: center;
+  font-size: var(--fs-18);
+  margin-block: 2rem 3rem;
+  font-weight: normal;
+}
+.content-of-box .box-title {
+  font-size: var(--fs-24);
+  font-weight: normal;
+  margin-block: 1rem;
+}
+.icon i {
+  font-size: 5rem;
+}
+.content-of-box p {
+  line-height: var(--line-hreight-27);
+  font-size: var(--fs-15);
+}
+/* ---------------
+Design section
+----------------- */
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 2rem;
+  gap: 1rem;
+  background-color: var(--tertiary-color);
+}
+.left-side h2.title {
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+.left-side p {
+  font-size: var(--fs-18);
+  line-height: var(--line-hreight-27);
+  margin-block: 1.5rem 1rem;
+}
+.left-side a {
+  display: block;
+  text-decoration: none;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  font-size: var(--fs-15);
+  padding: 0.6rem 1rem;
+  opacity: 0.8;
+}
+.left-side > button {
+  border: none;
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: var(--fs-15);
+}
+.left-side button:hover a {
+  opacity: 1;
+}
+.right-side img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+}
+/* --------
+Team section
+---------- */
+.team {
+  padding: 2rem 1.5rem;
+}
+.team-card-content {
+  text-align: start;
+  padding: 0.5rem 10px;
+}
+.team-card-content h1 {
+  margin-bottom: 0.7rem;
+}
+.team-card-content h3 {
+  font-size: var(--fs-15);
+  font-weight: normal;
+  color: gray;
+  margin-bottom: 0.7rem;
+  font-weight: normal;
+}
+.team-card-content p {
+  margin-bottom: 1rem;
+  font-size: var(--fs-15);
+  line-height: var(--line-hreight-27);
+  font-weight: normal;
+  color: rgb(62, 62, 62);
+}
+.contact-btn button {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: var(--fs-15);
+  background-color: #cccccc;
+  cursor: pointer;
+}
+.contact-btn button:hover {
+  background-color: gainsboro;
+}
+.team-card img {
+  filter: grayscale(100%);
+}
+
+.team-card {
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: 0.5s;
+}
+
+/* ----
+work section style
+----- */
+.work-card:hover img {
+  width: 100%;
+  opacity: 0.7;
+}
+/* -------
+counter section style
+-------- */
+.counter .d-flex {
+  justify-content: space-around;
+  padding: 3rem 1rem;
+  gap: 1rem;
+  background-color: var(--fourth-color);
+  color: var(--tertiary-color);
+}
+.counter-card {
+  text-align: center;
+  padding: 1rem;
+}
+/* ----------------
+Skill section style
+----------------- */
+.skill .d-flex {
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  gap: 1rem;
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+}
+.skill-card {
+  max-width: 100%;
+}
+.skill-card .title {
+  text-align: start;
+  font-size: var(--fs-24);
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+.skill-card p {
+  font-size: var(--fs-15);
+  line-height: var(--line-hreight-27);
+  font-weight: normal;
+  color: rgb(62, 62, 62);
+  margin-bottom: 0.5rem;
+}
+
+.Progress-card {
+  width: 100%;
+}
+.Progress-card .photography h3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+.Progress-card .photography h3 i {
+  font-size: 1rem;
+}
+.Progress-card .progress {
+  width: 100%;
+
+  background-color: var(--secondary-color);
+  margin-bottom: 1rem;
+  color: #000000;
+  font-size: var(--fs-15);
+  text-align: center;
+  font-weight: normal;
+}
+.Progress-card .progress .progress-bar-1 {
+  padding: 0.2rem 0;
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+  width: 90%;
+}
+.Progress-card .progress .progress-bar-2 {
+  padding: 0.2rem 0;
+
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+  width: 85%;
+}
+.Progress-card .progress .progress-bar-3 {
+  padding: 0.2rem 0;
+  background-color: var(--fourth-color);
+  color: var(--secondary-color);
+  width: 75%;
+}
+/* --------
+Pricing section style
+
+----------- */
+.pricing {
+  padding: 6rem 0rem 0rem;
+  margin: 0;
+}
+.pricing .subtitle {
+  margin: 0;
+}
+.pricing,
+.pricing .d-flex {
+  color: var(--tertiary-color);
+  background-color: var(--fourth-color);
+}
+.pricing .d-flex {
+  padding-top: 3rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.pricing-card {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  background-color: var(--secondary-color);
+  box-shadow: var(--shadow);
+}
+.pricing-card .special-title {
+  margin: 0;
+}
+.pricing-card ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-card .special-title {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 1.7rem;
+  font-size: var(--fs-24);
+  font-weight: normal;
+}
+#pricing h4 {
+  margin-top: 1rem;
+}
+.pricing-card ul li {
+  border-bottom: 1px solid var(--tertiary-color);
+  font-size: var(--fs-15);
+  line-height: var(--line-hreight-27);
+  font-weight: normal;
+  color: rgb(62, 62, 62);
+  padding: 1.3rem 1rem;
+}
+.pricing-card .pro {
+  background-color: #f44336;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pricing-card .price-count {
+  border-bottom: none;
+
+  /* background-color: #8d4141; */
+}
+.pricing-card .price-count span {
+  color: var(--fourth-color);
+  opacity: 0.7;
+  display: block;
+  margin-top: 1rem;
+}
+
+.pricing-card .btn {
+  border-bottom: none;
+  background-color: var(--tertiary-color);
+  padding: 1rem 0;
+}
+.pricing-card .btn button {
+  text-align: center;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  opacity: 0.7;
+}
+.pricing-card .btn button:hover {
+  opacity: 1;
+}
+
+/* ---------
+Contact section style
+---------*/
+.contact {
+  padding: 6rem 2rem;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 3px solid #dfdfdf;
+  border-radius: 5px;
+}
+.form-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+.info i {
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.send-btn {
+  display: inline-block;
+  width: 17%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.6rem 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.send-btn:hover {
+  background-color: gainsboro;
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+/* ----------
+map section style
+ */
+.map {
+  filter: grayscale(80%);
+  padding: 0rem 2rem;
+}
+/* ---------
+Style footer  section
+------------*/
+footer {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 1rem;
+}
+.footer > a {
+  font-size: 0.7rem;
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--secondary-color);
+}
+footer a:hover {
+  background-color: var(--fourth-color);
+}
+.footer .socile-icons {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+}
+footer p > a {
+  color: var(--secondary-color);
+  text-decoration: underline;
+  padding: 0.5rem 0.8rem;
+  background-color: transparent;
+}
